@@ -13,7 +13,7 @@ def create_connection(host_name, user_name, user_password, db_name):
     except Error as e:
         print(f"Произошла ошибка '{e}'")
     return connection        
-connection = create_connection("localhost", "root", "20062014Denis", "bot")
+connection = create_connection("localhost", "root", "XXXXXX", "bot")
 ### создание таблицы
 def execute_query(connection, query):
     cursor = connection.cursor()
