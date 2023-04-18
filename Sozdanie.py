@@ -12,7 +12,7 @@ def create_connection(host_name, user_name, user_password):
     except Error as e:
         print(f"Произошла ошибка '{e}'")
     return connection
-connection = create_connection("localhost", "root", "20062014Denis")
+connection = create_connection("localhost", "root", "XXXXXXX")
 
 def create_database(connection, query):
     cursor = connection.cursor()
