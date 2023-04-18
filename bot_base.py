@@ -4,7 +4,7 @@ from mysql.connector import Error
 from telebot import types # для указание типов
 from re import findall
 # Создаем экземпляр бота
-bot = telebot.TeleBot('5865980939:AAEyNQIVekiR8x1QYPgO8RFbzF0NwL5quHc') ### переменная 
+bot = telebot.TeleBot('Вставляйте свой токен') ### переменная 
 # бота сюда записываем наш токен который прислал нам телеграм бот BotFather
 def nazad():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)#,one_time_keyboard = True)  ## спрятать клаву при нажатии
@@ -42,7 +42,7 @@ def create_connection(host_name, user_name, user_password, db_name):
     except Error as e:
         print(f"Произошла ошибка '{e}'")
     return connection        
-connection = create_connection("localhost", "root", "20062014Denis", "bot")
+connection = create_connection("localhost", "root", "XXXXXXXXXX", "bot")
 ### создание таблицы
 def execute_query(connection, query):
     cursor = connection.cursor()
